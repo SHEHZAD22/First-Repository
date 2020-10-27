@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 50px auto;
+  border: 4px solid black;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.card {
+  width: 250px;
+  height: 310px;
+  background: hsl(48, 72%, 69%);
+  border: 1px solid rgb(226, 192, 55);
+  margin-bottom: 50px;
+  transition: all 1s;
+  overflow: hidden;
+}
+.card:hover {
+    background: linear-gradient(235deg, #ff0095, #00fc37e8, #eede04);
+  }
+
+
+
+.c-header {
+  text-align: center;
+  position: relative;
+  top: 0px;
+  padding: 50px 10px;
+  background: rgb(255, 221, 71);
+  color: white;
+  position: relative;
+  transition: all 1s;
+}
+
+.card:hover .c-header {
+  top: -200px;
+}
+
+
+
+.c-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  top: 0px;
+  transition: all 1s;
+}
+.card:hover .c-body {
+    top: -100px;
+  }
+
+
+
+.c-body .btn {
+  position: relative;
+  bottom: -100px;
+  display: block;
+  text-align: center;
+  background-color: rgb(100, 23, 9);
+  text-decoration: none;
+  color: white;
+  transition: all 2s;
+}
+.card .btn:hover {
+  background: linear-gradient(235deg, #ff0095, #00fc37e8, #eede04);
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(0.9);
+  transform: rotate(362deg);
+}
+.card:hover .btn {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 5px;
+  }
+
+
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
