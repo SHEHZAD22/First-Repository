@@ -17,7 +17,6 @@ body {
   font-size: 30px;
 }
 
-
 .card {
   width: 250px;
   height: 310px;
@@ -27,11 +26,14 @@ body {
   transition: all 1s;
   overflow: hidden;
 }
-.card:hover {
-    background: linear-gradient(235deg, #ff0095, #00fc37e8, #eede04);
-  }
-
-
+.card:hover:nth-child(odd) {
+  background: linear-gradient(235deg, #ff0095, #00fc37e8, #eede04);
+  box-shadow: 2px 2px 1px black, -2px -2px 1px rgb(37, 35, 35);
+}
+.card:hover:nth-child(even) {
+  background: linear-gradient(235deg, #08f7ff57, #e0433de8, #4ef103);
+  box-shadow: 4px 4px 4px rgb(92, 84, 84), -4px -4px 4px rgb(37, 35, 35);
+}
 
 .c-header {
   text-align: center;
@@ -48,8 +50,6 @@ body {
   top: -200px;
 }
 
-
-
 .c-body {
   padding: 30px 20px;
   text-align: center;
@@ -59,10 +59,8 @@ body {
   transition: all 1s;
 }
 .card:hover .c-body {
-    top: -100px;
-  }
-
-
+  top: -100px;
+}
 
 .c-body .btn {
   position: relative;
@@ -83,12 +81,10 @@ body {
   transform: rotate(362deg);
 }
 .card:hover .btn {
-    display: block;
-    margin-top: 30px;
-    padding: 10px 5px;
-  }
-
-
+  display: block;
+  margin-top: 30px;
+  padding: 10px 5px;
+}
 
 .row {
   display: flex;
